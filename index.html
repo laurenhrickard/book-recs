@@ -4,10 +4,53 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link rel="stylesheet" href="style.css" />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.7/axios.min.js"></script>
     <title>Book Recommendations 📖</title>
   </head>
   <body>
-    <h1>Get your book recommendations here!</h1>
+    <div class="container">
+      <h1>Get your book recommendations here!</h1>
+
+      <form id="rec-generator-form">
+        <input
+          type="text"
+          placeholder="Type your keywords here..."
+          class="enter-keywords"
+          required
+        />
+        <select class="choose-genre">
+          <option>Choose a genre...</option>
+          <option>Action/Adventure</option>
+          <option>Fantasy</option>
+          <option>Historical</option>
+          <option>Horror</option>
+          <option>LGBTQ+</option>
+          <option>Mystery</option>
+          <option>Romance</option>
+          <option>Science Fiction</option>
+          <option>Suspense</option>
+          <option>Thriller</option>
+          <option>YA</option></select
+        ><br /><br />
+        <input type="submit" class="submit" />
+      </form>
+
+      <div class="rec-space" id="rec-space"></div>
+
+      <footer>
+        This AI project was coded by 🙋🏼‍♀️
+        <a href="https://github.com/laurenhrickard" target="_blank"
+          >Lauren Rickard</a
+        >, is open-sourced on
+        <a href="https://github.com/laurenhrickard/book-recs" target="_blank"
+          >Github</a
+        >
+        and hosted on
+        <a href="https://find-book-recs.netlify.app/" target="_blank"
+          >Netlify</a
+        >
+      </footer>
+    </div>
 
     <script src="index.js"></script>
   </body>
